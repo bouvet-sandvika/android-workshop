@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/nedry_off_white"
-    tools:context=".ui.gallery.TodoListFragment">
+    tools:context=".ui.todo.TodoListFragment">
 
     <TextView
         android:id="@+id/text_gallery"

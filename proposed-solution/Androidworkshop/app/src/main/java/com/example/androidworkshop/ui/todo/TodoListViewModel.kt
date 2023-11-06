@@ -1,13 +1,13 @@
-package com.example.androidworkshop.ui.home
+package com.example.androidworkshop.ui.todo
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class TipCalculatorViewModel : ViewModel() {
+class TodoListViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+        value = "This is gallery Fragment"
     }
     val text: LiveData<String> = _text
 }

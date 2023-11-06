@@ -1,4 +1,4 @@
-package com.example.androidworkshop.ui.gallery
+package com.example.androidworkshop.ui.todo
 
 import android.os.Bundle
 import android.view.LayoutInflater

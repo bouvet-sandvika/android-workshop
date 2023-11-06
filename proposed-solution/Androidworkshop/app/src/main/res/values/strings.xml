@@ -14,4 +14,7 @@
     <string name="tip_calculator_percentage_label">24%</string>
     <string name="tip_calculator_tip_label">Tip</string>
     <string name="tip_calculator_total_label">Total</string>
+
+    <string name="tip_calculator_2_decimals_value">%.2f</string>
+    <string name="tip_calculator_zero_value">0.00</string>
 </resources>

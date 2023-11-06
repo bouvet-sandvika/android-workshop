@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/nedry_off_white"
     android:orientation="vertical"
-    tools:context=".ui.home.TipCalculatorFragment">
+    tools:context=".ui.tip.TipCalculatorFragment">
 
 
     <TextView
@@ -33,7 +33,7 @@
         android:id="@+id/tvTipLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="56dp"
         android:text="@string/tip_calculator_tip_label"
         app:layout_constraintEnd_toEndOf="@+id/tvtTipPercentLabel"
         app:layout_constraintTop_toBottomOf="@+id/tvtTipPercentLabel" />
@@ -51,21 +51,21 @@
         android:id="@+id/tvTotalAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="119.11"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="@+id/tvTotalLabel"
         app:layout_constraintStart_toStartOf="@+id/tvTipAmount"
-        app:layout_constraintTop_toTopOf="@+id/tvTotalLabel" />
+        app:layout_constraintTop_toTopOf="@+id/tvTotalLabel"
+        tools:text="119.11" />
 
     <TextView
         android:id="@+id/tvTipAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="19.11"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="@+id/tvTipLabel"
         app:layout_constraintStart_toStartOf="@+id/seekbarTip"
-        app:layout_constraintTop_toTopOf="@+id/tvTipLabel" />
+        app:layout_constraintTop_toTopOf="@+id/tvTipLabel"
+        tools:text="19.11" />
 
     <SeekBar
         android:id="@+id/seekbarTip"
@@ -73,11 +73,11 @@
         android:layout_height="wrap_content"
         android:max="30"
         app:layout_constraintBottom_toBottomOf="@+id/tvtTipPercentLabel"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintStart_toStartOf="@+id/etBaseAmount"
         app:layout_constraintTop_toTopOf="@+id/tvtTipPercentLabel" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal2"
+        android:id="@+id/etBaseAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -85,8 +85,18 @@
         android:hint="Bill amount"
         android:inputType="numberDecimal"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvBaseLabel"
         app:layout_constraintStart_toEndOf="@+id/tvBaseLabel"
-        app:layout_constraintTop_toTopOf="@+id/tvBaseLabel"
-        app:layout_constraintBottom_toBottomOf="@id/tvBaseLabel"/>
+        app:layout_constraintTop_toTopOf="@+id/tvBaseLabel" />
+
+    <TextView
+        android:id="@+id/tvTipDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/seekbarTip"
+        app:layout_constraintStart_toStartOf="@+id/seekbarTip"
+        app:layout_constraintTop_toBottomOf="@+id/seekbarTip"
+        tools:text="Acceptable" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
