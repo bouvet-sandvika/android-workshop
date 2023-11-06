@@ -17,4 +17,8 @@
 
     <string name="tip_calculator_2_decimals_value">%.2f</string>
     <string name="tip_calculator_zero_value">0.00</string>
+
+    <string name="todo_list_input_hint">Enter Todo Title</string>
+    <string name="todo_list_add_button">ADD TODO</string>
+    <string name="todo_list_delete_button">DELETE TODO</string>
 </resources>

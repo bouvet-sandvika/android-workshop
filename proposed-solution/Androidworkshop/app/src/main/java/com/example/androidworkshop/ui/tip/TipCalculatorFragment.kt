@@ -21,11 +21,7 @@ class TipCalculatorFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
-    private lateinit var tipCalculatorViewModel: TipCalculatorViewModel
-
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        tipCalculatorViewModel = ViewModelProvider(this)[TipCalculatorViewModel::class.java]
         _binding = FragmentTipCalculatorBinding.inflate(inflater, container, false)
 
         val root: View = binding.root

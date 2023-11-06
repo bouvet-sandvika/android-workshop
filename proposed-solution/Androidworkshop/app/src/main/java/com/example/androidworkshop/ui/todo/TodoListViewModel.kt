@@ -6,8 +6,9 @@ import androidx.lifecycle.ViewModel
 
 class TodoListViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is gallery Fragment"
+    val todoList = mutableListOf<Todo>()
+
+    fun deleteDoneTodos() {
+        todoList.removeAll { it.isChecked }
     }
-    val text: LiveData<String> = _text
 }
